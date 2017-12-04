@@ -36,17 +36,17 @@ hr.star-dark:after {
   font-size: 2em; }
 
 hr.star-light {
-  border-color: #fff; }
+  border-color: #fffcf5; }
 
 hr.star-light:after {
-  color: #fff;
-  background-color: #18BC9C; }
+  color: #fffcf5;
+  background-color: #924136; }
 
 hr.star-dark {
-  border-color: #2C3E50; }
+  border-color: #254c5c; }
 
 hr.star-dark:after {
-  color: #2C3E50;
+  color: #254c5c;
   background-color: white; }
 
 section {
@@ -86,18 +86,18 @@ section {
   font-weight: 700;
   font-family: 'Montserrat'; }
   #mainNav .navbar-brand {
-    color: #fff; }
+    color: #fffcf5; }
   #mainNav .navbar-nav {
     margin-top: 1rem;
     letter-spacing: 0.0625rem; }
     #mainNav .navbar-nav li.nav-item a.nav-link {
-      color: #fff; }
+      color: #fffcf5; }
       #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-        color: #18BC9C; }
+        color: #924136; }
       #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
-        color: #fff; }
+        color: #fffcf5; }
       #mainNav .navbar-nav li.nav-item a.nav-link.active {
-        color: #18BC9C; }
+        color: #924136; }
   #mainNav .navbar-toggler {
     font-size: 80%;
     padding: 0.8rem; }
@@ -117,11 +117,11 @@ section {
     #mainNav .navbar-nav {
       margin-top: 0; }
     #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
-      color: #fff;
-      background: #18BC9C; }
+      color: #fffcf5;
+      background: #924136; }
       #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
-        color: #fff;
-        background: #18BC9C; }
+        color: #fffcf5;
+        background: #924136; }
   #mainNav.navbar-shrink {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem; }
@@ -236,7 +236,7 @@ header.masthead {
   opacity: 1; }
 
 .floating-label-form-group-with-focus label {
-  color: #18BC9C; }
+  color: #924136; }
 
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #e9ecef; }
@@ -244,14 +244,14 @@ form .row:first-child .floating-label-form-group {
 .footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: #2C3E50;
-  color: #fff; }
+  background-color: #254c5c;
+  color: #fffcf5; }
 
 .copyright {
   background-color: #1a252f; }
 
 a {
-  color: #18BC9C; }
+  color: #924136; }
   a:focus, a:hover, a:active {
     color: #128f76; }
 
@@ -259,27 +259,27 @@ a {
   border-width: 2px; }
 
 .bg-primary {
-  background-color: #18BC9C !important; }
+  background-color: #924136 !important; }
 
 .bg-secondary {
-  background-color: #2C3E50 !important; }
+  background-color: #254c5c !important; }
 
 .text-primary {
-  color: #18BC9C !important; }
+  color: #924136 !important; }
 
 .text-secondary {
-  color: #2C3E50 !important; }
+  color: #254c5c !important; }
 
 .btn-primary {
-  background-color: #18BC9C;
-  border-color: #18BC9C; }
+  background-color: #924136;
+  border-color: #924136; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
     background-color: #128f76;
     border-color: #128f76; }
 
 .btn-secondary {
-  background-color: #2C3E50;
-  border-color: #2C3E50; }
+  background-color: #254c5c;
+  border-color: #254c5c; }
   .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
     background-color: #1a252f;
     border-color: #1a252f; }
