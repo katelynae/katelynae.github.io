@@ -84,7 +84,8 @@ section {
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-weight: 700;
-  font-family: 'Montserrat'; }
+  font-family: 'Montserrat';
+  background-color: #121115;}
   #mainNav .navbar-brand {
     color: #fffcf5; }
   #mainNav .navbar-nav {
@@ -106,7 +107,6 @@ section {
   #mainNav {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-    background-color: #121115;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s; }
@@ -125,8 +125,7 @@ section {
         background: #3f220e; }
   #mainNav.navbar-shrink {
     padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    background-color: #121115;}
+    padding-bottom: 0.5rem;}
     #mainNav.navbar-shrink .navbar-brand {
       font-size: 1.5em; } }
 
