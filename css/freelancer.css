@@ -259,10 +259,12 @@ a {
   border-width: 2px; }
 
 .bg-primary {
-  background: url('..img/bg/IMG_2744.jpg') no-repeat center cover;  }
+  background: url('../img/bg/IMG_2774.jpg') no-repeat center;
+  background-size: cover;}
 
 .bg-secondary {
-  background-color: #121115 !important; }
+  background: url('../img/bg/IMG_2717.jpg') no-repeat center;
+  background-size: cover;}
 
 .text-primary {
   color: #3f220e !important; }
