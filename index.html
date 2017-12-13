@@ -71,8 +71,17 @@
       <div class="container">
         <h2 class="text-center text-uppercase text-secondary mb-0">Portfolio</h2>
         <hr class="star-dark mb-5">
-        <div class="row">
-          <div class="col-md-6 col-lg-4">
+        <div class="row grid">
+          <div class="button-group filter-button-group">
+            <button data-filter="*">Show All</button>
+            <button data-filter=".functions">Functions</button>
+            <button data-filter=".for-loops">For Loops</button>
+            <button data-filter=".ifelse">If/Else</button>
+            <button data-filter=".arrays">Arrays</button>
+            <button data-filter=".objects">Objects</button>
+            <button data-filter=".methods">Methods</button>
+          </div>
+          <div class="col-md-6 col-lg-4 grid-item functions">
             <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
               <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
                 <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
@@ -82,7 +91,7 @@
               <img class="img-fluid" src="img/portfolio/traffic.png" alt="">
             </a>
           </div>
-          <div class="col-md-6 col-lg-4">
+          <div class="col-md-6 col-lg-4 grid-item functions for-loops ifelse arrays">
             <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
               <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
                 <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
@@ -92,7 +101,7 @@
               <img class="img-fluid" src="img/portfolio/cipher.png" alt="">
             </a>
           </div>
-          <div class="col-md-6 col-lg-4">
+          <div class="col-md-6 col-lg-4 grid-item functions objects ifelse">
             <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
               <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
                 <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
@@ -102,7 +111,7 @@
               <img class="img-fluid" src="img/portfolio/cards.png" alt="">
             </a>
           </div>
-          <div class="col-md-6 col-lg-4">
+          <div class="col-md-6 col-lg-4 grid-item objects methods ifelse">
             <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
               <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
                 <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
@@ -112,7 +121,7 @@
               <img class="img-fluid" src="img/portfolio/hotel.png" alt="">
             </a>
           </div>
-          <div class="col-md-6 col-lg-4">
+          <div class="col-md-6 col-lg-4 grid-item objects methods">
             <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-5">
               <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
                 <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
@@ -122,7 +131,7 @@
               <img class="img-fluid" src="img/portfolio/car.png" alt="">
             </a>
           </div>
-          <div class="col-md-6 col-lg-4">
+          <div class="col-md-6 col-lg-4 grid-item arrays">
             <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
               <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
                 <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
@@ -428,12 +437,37 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
+    <!--Isotope Plugin -->
+    <script src="js/isotope.pkgd.min.js"></script>
+
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
 
     <!-- Custom scripts for this template -->
     <script src="js/freelancer.min.js"></script>
+
+    <script>
+
+      $('.grid').isotope({
+        // options... 
+        itemSelector: '.grid-item',
+        masonry: {
+          columnWidth: 200
+        }
+      });
+
+      // init Isotope
+      var $grid = $('.grid').isotope({
+        // options
+      });
+      // filter items on button click
+      $('.filter-button-group').on( 'click', 'button', function() {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+      });
+
+    </script>
 
   </body>
 
