@@ -256,3 +256,8 @@ a {
 iframe {
   border-style: solid;
 }
+
+.button-group {
+  margin: 1.5em 0;
+  text-align: center;
+}
