@@ -261,3 +261,49 @@ iframe {
   margin: 1.5em 0;
   text-align: center;
 }
+
+.hidden{
+  display: none!important;
+}
+
+
+.team_container {
+    margin: 50px auto;
+    width: 75%;
+    text-align: center;
+}
+
+.profiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.member_profile {
+  margin: 15px;
+  width: 250px;
+}
+
+.member_circle {
+  position: relative;
+}
+
+
+.member_desc {
+    background-color: rgba(33, 37, 41, 0.5);
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    color: #fff;
+}
+
+
